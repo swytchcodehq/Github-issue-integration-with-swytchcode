@@ -27,14 +27,20 @@ cd github-issue-swytchcode
    - Generate and copy the token (starts with `ghp_`)
 3. Open `.env` and paste your PAT.
 
-### 3. Install Dependencies
-Install packages and download the Swytchcode integration:
+### 3. Install Swytchcode CLI
+First, install the Swytchcode CLI globally on your machine:
+```bash
+npm install -g swytchcode
+```
+
+### 4. Install Dependencies
+Install the local project packages and download the Swytchcode integration:
 ```bash
 npm install
 swytchcode bootstrap
 ```
 
-### 4. Run the Script
+### 5. Run the Script
 Execute the main script:
 ```bash
 npm run dev
