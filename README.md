@@ -8,14 +8,27 @@ This repository demonstrates how to use the Swytchcode CLI and TypeScript SDK to
 
 ## Setup Instructions
 
-### 1. Fork and Clone
+### 1. Install Swytchcode CLI
+First, install the Swytchcode CLI globally on your machine:
+```bash
+npm install -g swytchcode
+```
+
+### 2. Fork and Clone
 Fork this repository to your own account, then clone it locally:
 ```bash
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/github-issue-swytchcode.git
 cd github-issue-swytchcode
 ```
 
-### 2. Configure Environment
+### 3. Install Dependencies
+Install the local project packages and download the Swytchcode integration:
+```bash
+npm install
+swytchcode bootstrap
+```
+
+### 4. Configure Environment
 1. Copy the `.env.example` file to create a new `.env` file:
    ```bash
    cp .env.example .env
@@ -26,19 +39,6 @@ cd github-issue-swytchcode
    - Check the `repo` scope box
    - Generate and copy the token (starts with `ghp_`)
 3. Open `.env` and paste your PAT.
-
-### 3. Install Swytchcode CLI
-First, install the Swytchcode CLI globally on your machine:
-```bash
-npm install -g swytchcode
-```
-
-### 4. Install Dependencies
-Install the local project packages and download the Swytchcode integration:
-```bash
-npm install
-swytchcode bootstrap
-```
 
 ### 5. Run the Script
 Execute the main script:
