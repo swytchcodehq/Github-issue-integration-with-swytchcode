@@ -62,8 +62,8 @@ async function main() {
     }) as any;
 
     console.log('\nSuccess! Issue created.');
-    console.log(`Issue URL: ${result.html_url}`);
-    console.log(`Issue Number: #${result.number}`);
+    console.log(`Issue URL: ${result.data.html_url}`);
+    console.log(`Issue Number: #${result.data.number}`);
   } catch (error) {
     console.error('\n❌ Failed to create issue!');
     console.error('HINT: This usually happens if your GitHub PAT is invalid, expired, or missing the "repo" scope.');
